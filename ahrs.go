@@ -11,5 +11,8 @@ type AHRS interface {
 }
 
 func invSqrt(x float64) float64 {
+	if x == 0.0 {
+		return 0.0
+	}
 	return 1 / math.Sqrt(x)
 }
